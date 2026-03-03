@@ -15,6 +15,10 @@ import crypto from 'crypto';
 const app = express();
 app.use(express.json());
 
+// ── Route: GET / ──────────────────────────────────────────────
+app.get('/', (req, res) => res.json({ service: 'aaagtmp-content-agent', status: 'ok', version: '1.0.0' }));
+
+
 // ── Config (set as env vars in Dokploy/Coolify) ─────────────
 const {
   SUPABASE_URL,
