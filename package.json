@@ -1,0 +1,13 @@
+{
+  "name": "aaagtmp-content-agent-intake",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "webhook.js",
+  "scripts": {
+    "start": "node webhook.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.47.0",
+    "express": "^4.18.0"
+  }
+}
